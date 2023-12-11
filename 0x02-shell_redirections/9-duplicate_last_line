@@ -1,2 +1,2 @@
 #!/bin/bash
-cat tail iacta | tail -n 1 | sed
+sed '3p' iacta
