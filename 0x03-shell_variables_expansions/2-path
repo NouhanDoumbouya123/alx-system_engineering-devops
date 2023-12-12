@@ -1,2 +1,2 @@
 #!/bin/bash
-cp '/action' >> 'PATH'
+cp '/action' '$PATH'
