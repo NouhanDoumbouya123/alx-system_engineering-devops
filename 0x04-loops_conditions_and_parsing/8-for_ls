@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Displaying content of the current directory
 # Only the part of the name after the first dash is displayed
 
