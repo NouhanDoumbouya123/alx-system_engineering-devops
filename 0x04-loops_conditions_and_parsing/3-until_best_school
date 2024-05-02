@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Display Best Shcool 10 times using until
+
+i=0
+until [ $i -eq 10 ]; do
+  echo "Best Scholl"
+  ((i++))
+done 
