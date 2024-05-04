@@ -4,7 +4,7 @@
 # Function to handle SIGTERM signal
 terminate() {
     echo "I hate the kill command"
-    rm /tmp/myscript.pid
+    rm /var/run/myscript.pid
     exit
 }
 
@@ -16,7 +16,7 @@ interrupt() {
 # Function to handle SIGQUIT signal
 quit() {
     echo "Y U no love me?!"
-    rm /tmp/myscript.pid
+    rm /var/run/myscript.pid
     exit
 }
 
@@ -26,7 +26,7 @@ trap interrupt SIGINT
 trap quit SIGQUIT
 
 # Write PID to file
-echo $$ > /tmp/myscript.pid
+echo $$ > /var/run/myscript.pid
 
 # Infinite loop
 while true; do
