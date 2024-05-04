@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A script that stops a specific process
+
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+
+if [ -n "$pid" ]; then
+  kill -15 "$pid"
+  echo "Terminated"
+fi
