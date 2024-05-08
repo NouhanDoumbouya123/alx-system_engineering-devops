@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-# A regular expression that is simply matching School
+# Matches the string "School" in the input.
 puts ARGV[0].scan(/School/).join
