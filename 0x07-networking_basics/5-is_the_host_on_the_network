@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Ping the ip address
 
 # Check if argument is passed
 if [ $# -ne 1 ]; then
